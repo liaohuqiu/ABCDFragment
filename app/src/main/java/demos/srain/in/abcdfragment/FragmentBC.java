@@ -30,7 +30,7 @@ public class FragmentBC extends Fragment {
             public void onClick(View v) {
                 FragmentTransaction ft = getActivity().getSupportFragmentManager().beginTransaction();
                 FragmentD dFrag = new FragmentD();
-                ft.add(R.id.fragment_text_fragment, dFrag, "dFrag");
+                ft.replace(R.id.fragment_text_fragment, dFrag, "FragmentD");
                 ft.commit();
             }
         });
